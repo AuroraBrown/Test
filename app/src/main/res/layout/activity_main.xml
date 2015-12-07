@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="net.aurorabrown.test.MainActivity"
+    android:padding="0dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#67c8c8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/prof2"
+                android:scaleType="centerCrop"
+                android:padding="0dp"
+                android:onClick="goToProfile"
+                android:focusable="false"
+                android:contentDescription="@string/goProfileFromHomeButton" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Task"
+                android:id="@+id/button"
+                android:onClick="createNewTask" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/expPointsLabel"
+                android:layout_gravity="center_horizontal|left"
+                android:textAlignment="center"
+                android:text="@string/expPointsLabel"
+                android:textSize="25sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvSavedValueDisplay"
+                android:layout_gravity="center_horizontal|right"
+                android:textColor="#000000"
+                android:textIsSelectable="true"
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                android:text="@string/tvSavedValueDisplay" />
+
+            <!--android:text="@string/tvSavedValueDisplay"-->
+
+
+        </LinearLayout>
+
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cbTask"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/addExpPointsButtonLabel"
+            android:id="@+id/addExpPointsButton"
+            android:textSize="20sp" />
+
+
+
+        <!-- Added button and list view.-->
+
+        <Button
+            android:id="@+id/findSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/findCountryButtonText" />
+
+
+        <ListView android:id="@+id/listView1" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

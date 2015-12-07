@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaskQuest</string>
+    <string name="goHomeFromProfileButton">goHomeFromProfileButton</string>
+    <string name="goProfileFromHomeButton">goProfileFromHomeButton</string>
+    <string name="expPointsLabel">Experience Points:</string>
+    <string name="addExpPointsButtonLabel">Add Points</string>
+    <string name="findCountryButtonText">Commit Selected Tasks</string>
+    <string name="tvSavedValueDisplay" />
+    <string name="addTaskDialogLabel">Create New Task</string>
+    <string name="doneAddingTaskButton">Done</string>
+
+</resources>

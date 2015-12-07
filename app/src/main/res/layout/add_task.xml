@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67c8c8">
+
+    <Button
+        style="@style/TextAppearance.AppCompat.Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/cancelTaskButton"
+        android:layout_gravity="center_vertical"
+        android:onClick="goHome"
+        android:background="#86dbdb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addTaskDialogLabel"
+        android:id="@+id/addTaskDialogLabel"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newTaskVerbInput"
+                android:layout_gravity="center_vertical"
+                android:background="#e0ffffff"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:minWidth="200dp"
+                android:padding="5dp"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newTaskNumInput"
+                android:layout_gravity="center_vertical"
+                android:background="#e0ffffff"
+                android:textSize="20sp"
+                android:minWidth="200dp"
+                android:inputType="text"
+                android:padding="5dp"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newTaskUnitInput"
+                android:layout_gravity="center_vertical"
+                android:background="#e0ffffff"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:minWidth="200dp"
+                android:padding="5dp"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newTaskDescInput"
+                android:layout_gravity="center_vertical"
+                android:background="#e0ffffff"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:minWidth="200dp"
+                android:padding="5dp"
+                android:focusable="true" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doneAddingTaskButton"
+        android:id="@+id/doneAddingTaskButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="createTask"
+        android:background="#86dbdb" />
+
+</LinearLayout>

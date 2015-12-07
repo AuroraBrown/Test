@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#67c8c8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/goHomeFromProfileButton"
+            android:src="@drawable/prof2"
+            android:onClick="goHome"
+            android:scaleType="centerCrop"
+            android:padding="0dp"
+            android:contentDescription="@string/goHomeFromProfileButton" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is a text"
+            android:id="@+id/checkedTextView2"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:checkMark="@drawable/abc_btn_check_material"
+            android:checkMarkTint="#ffffff"
+            android:enabled="true"
+            android:elegantTextHeight="false"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
